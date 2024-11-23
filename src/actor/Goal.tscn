@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/actor/Goal.gd" type="Script" id=1]
+[ext_resource path="res://src/actor/goal_image.tscn" type="PackedScene" id=2]
+
+[node name="Goal" type="Node2D"]
+z_index = 9
+script = ExtResource( 1 )
+size = Vector2( 25, 25 )
+x_offset = 70.0
+offset = Vector2( 70, -15 )
+
+[node name="Image" parent="." instance=ExtResource( 2 )]
+
+[editable path="Image"]
